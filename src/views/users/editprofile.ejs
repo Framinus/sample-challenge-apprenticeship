@@ -2,13 +2,7 @@
 
 <h2>Profile Page</h2>
 
-Hi, <%= name %>!
-
-<a href="./<%= id %>/edit">
-  <button type="button" id="edit-profile-btn">
-    Edit Your Profile
-  </button>
-</a>
+Hi, <%= name %>! Edit your profile:
 
 <form class="edit-profile" action="/users/:id" method="put">
   <input type="text" name="name" placeholder="name" required>
