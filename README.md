@@ -53,64 +53,92 @@ Each requirement is assigned a point value. A fully complete requirement will ea
 
 ## Specs
 
+
 ## Sign Up
 
+Total points for this section: 120.
+
 Routing:
-- [ ] __20:__ Navigating to `/sign-up` loads the sign up page.
+- [x] __20:__ Navigating to `/sign-up` loads the sign up page.
+
+- update the schema with users
+- reload the schema
+- create the get and post routes in authentication.js
+- create a view for sign-up
 
 Users can:
-- [ ] __40:__ Sign up for an account with a name, email and password.
-- [ ] __10:__ Be redirected to the home page (`/`) after signing up.
+- [x] __40:__ Sign up for an account with a name, email and password.
+- [x] __10:__ Be redirected to the home page (`/`) after signing up.
 
 Users CANNOT:
-- [ ] __10:__ Sign up without a name value
-- [ ] __10:__ Sign up without an email address value
-- [ ] __30:__ Sign up without an email that is already in use.
+- [x] __10:__ Sign up without a name value
+- [x] __10:__ Sign up without an email address value
+- [x] __30:__ Sign up with an email that is already in use.
 
 Files to modify:
+- `src/data/schema.sql`
 - `src/routes/authentication.js`
 - `src/actions/signUp.js`
 - `src/views/authentication/sign-up.ejs`
 
+Current points: 120/120
+
 ## Sign in
 
+Total points for this section: 80.
+
 Routing:
-- [ ] __20:__ Navigating to `/sign-in` loads the sign in page.
+- [x] __20:__ Navigating to `/sign-in` loads the sign in page.
 
 Users can:
-- [ ] __20:__ Sign in to an existing account with an email address and password.
-- [ ] __10:__ Be redirected to the home page (`/`) after signing in.
+- [x] __20:__ Sign in to an existing account with an email address and password.
+- [x] __10:__ Be redirected to the home page (`/`) after signing in.
 
 Users CANNOT:
 
-- [ ] __30:__ Sign in with an invalid email address and password combination.
+- [x] __30:__ Sign in with an invalid email address and password combination.
 
 Files to modify:
 - `src/routes/authentication.js`
 - `src/views/authentication/sign-in.ejs`
 - `src/actions/signIn.js`
 
+Current points: 80/80
+
 ## Testing
 
+Total points for this section: 30.
+
 Testing:
-- [ ] __30:__ Write a test for the `signUp` action using Mocha. This test should check that calling the `signUp` function adds a row in the database
+- [x] __30:__ Write a test for the `signUp` action using Mocha. This test should check that calling the `signUp` function adds a row in the database
 
 Files to modify:
 - `test/actions/signUp.test.js`
 
+Current points: 30/30
 
 ## Profile
 
+Total points for this section: 100.
+
 Routing:
-- [ ] __20:__ Navigating to `/users/<USER ID>` loads the profile page. The profile page has a button `Edit` which when clicked, navigates to the edit profile page.
-- [ ] __20:__ Navigating to `/users/<USER ID>/edit` loads the edit profile page.
+- [x] __20:__ Navigating to `/users/<USER ID>` loads the profile page. The profile page has a button `Edit` which when clicked, navigates to the edit profile page.
+- [x] __20:__ Navigating to `/users/<USER ID>/edit` loads the edit profile page.
 - [ ] __20:__ Sending a PUT request to `/users/<USER ID>` updates the profile of the user
 
 Users can:
-- [ ] __10:__ See their username and email
+- [x] __10:__ See their username and email
 - [ ] __30:__ Edit their username and email using AJAX. Updating their profile should NOT require a page refresh.
 
 Files to modify:
 - `src/routes/users.js`
 - `src/views/users/profile.ejs`
 - `public/script.js`
+
+current section points: 50
+
+Total points overall: 330
+
+Current score: 280/300
+
+Current percentage: 84.84%
