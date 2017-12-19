@@ -1,0 +1,19 @@
+<% include ../partials/header %>
+
+<h2>Profile Page</h2>
+
+Hi, <%= name %>!
+
+<a href="./<%= id %>/edit">
+  <button type="button" id="edit-profile-btn">
+    Edit Your Profile
+  </button>
+</a>
+
+<form class="edit-profile" action="/users/:id" method="put">
+  <input type="text" name="name" placeholder="name" required>
+  <input type="text" name="email" placeholder="email" required>
+  <button id="save-changes-btn" type="submit">Save Changes</button>
+</form>
+
+<% include ../partials/footer %>

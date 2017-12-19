@@ -1,10 +1,14 @@
 import '../env'
 import { expect } from 'chai';
-import { signUp } from '../../src/actions';
+import createUser from '../../src/actions/signUp'
 
 describe('function signUp ', () => {
   it('should create a new row in the users table', () => {
-    // TODO: FIXME and write a real test
-    expect(1).to.equal(2)
+    return createUser('mary', 'm@m.com', 'mary')
+      .then((newUser) => {
+        expect(newUser.name).to.equal('mary')
+        expect(newUser.email).to.equal('m@m.com')
+        expect(newUser.password).to.equal('mary')
+      })
   })
 })

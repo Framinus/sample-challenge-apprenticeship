@@ -1,5 +1,14 @@
 <% include ../partials/header %>
 
-<!-- insert code here -->
+<h2>Profile Page</h2>
+
+<p>Hi, <%= name %>!</p>
+<p>E-mail address: <%= email %></p>
+
+<a href="./<%= id %>/edit">
+  <button type="button" id="edit-profile-btn">
+    Edit Your Profile
+  </button>
+</a>
 
 <% include ../partials/footer %>
